@@ -4,9 +4,9 @@ Le périmètre actuel est défini dans [Organisation à cinq blocs](ORGANISATION
 
 Cette comparaison repose sur les intitulés et aperçus des captures utilisateur du 30 octobre 2026. Ce n'est pas un audit de l'intégralité des instructions de chaque tâche. Elle ne prouve pas quelle application exécute une tâche. Aucune ancienne tâche T01–T25 n'a été désactivée par ce document ni par la modification de l'usine.
 
-## Une automatisation, cinq blocs
+## Cinq automatisations et cinq blocs
 
-Automatisation locale active : `usine-portfolio-publication-d-abord`, quotidien à 08:30 Europe/Paris. Les cinq blocs contiennent des volets complémentaires :
+Cinq tâches locales autonomes actives à 08:30 Europe/Paris, une par bloc et un nouveau chat par exécution. L'ancienne tâche `usine-portfolio-publication-d-abord` est supprimée; voir les identifiants dans [Exécutions séparées](EXECUTIONS-SEPAREES.md). Les cinq blocs contiennent des volets complémentaires :
 
 | Bloc | Production | GitHub | Mail / action utilisateur |
 |---|---|---|---|

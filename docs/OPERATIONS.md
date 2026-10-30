@@ -4,7 +4,7 @@ Le [programme d'organisation à cinq blocs](ORGANISATION-5-BLOCS.md) validé le 
 
 ## Tâche quotidienne
 
-Une tâche locale active à 08:30 Europe/Paris regroupe : Product Lab, Engineering Lab, AI Agency Lab, Amazon FBA Lab, Personal Branding & AI Business Lab. La tâche Codex crée les réalisations; GitHub Actions exécute les contrôles et l'audit, pas un générateur de produits. L'exécution locale dépend de Codex et de ses connexions; aucune API de génération payante n'est configurée dans Actions.
+Cinq tâches autonomes locales actives à 08:30 Europe/Paris exécutent chacune leur lab dans un nouveau chat : Product, Engineering, AI Agency, Amazon FBA, Personal Branding & AI Business. L'ancienne tâche regroupée est supprimée. Lire [Exécutions séparées](EXECUTIONS-SEPAREES.md) pour les identifiants, la reprise de progression et le compte rendu commun. Codex crée les réalisations; GitHub Actions exécute les contrôles et l'audit, pas un générateur de produits. L'exécution locale dépend de Codex et de ses connexions; aucune API de génération payante n'est configurée dans Actions.
 
 ## Sources GitHub
 

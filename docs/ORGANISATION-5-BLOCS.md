@@ -1,6 +1,6 @@
 # Organisation validée — cinq blocs quotidiens
 
-Validée par l'utilisateur le 30 octobre 2026. Cette version remplace les présentations précédentes à trois labs plus un article. Une tâche quotidienne à 08:30 Europe/Paris regroupe les cinq blocs, avec un mail détaillé après travail réel. Les trois premiers produisent du code GitHub; les deux derniers sont des dossiers privés par mail, sans dépôt supplémentaire.
+Validée par l'utilisateur le 30 octobre 2026. Cette version remplace les présentations précédentes à trois labs plus un article. Cinq tâches quotidiennes à 08:30 Europe/Paris exécutent chacune un bloc dans un nouveau chat; voir [Exécutions séparées](EXECUTIONS-SEPAREES.md). Un seul mail détaillé commun est conservé après travail réel. Les trois premiers blocs produisent du code GitHub; les deux derniers sont des dossiers privés par mail, sans dépôt supplémentaire.
 
 | Bloc | Objectif | Production et destination |
 |---|---|---|
@@ -57,6 +57,6 @@ Ne pas recréer les dépôts supprimés ni les anciens noms. L'orchestrateur ré
 
 ## Programmation, doublons et mails
 
-Une tâche locale active regroupe ces cinq blocs. Les anciennes tâches T01–T25 montrées en captures n'ont pas été désactivées par cette configuration : ne pas prétendre le contraire. Amazon FBA Lab recouvre désormais aussi les tâches Amazon T05/T18; le cinquième bloc recouvre la partie stratégie d'agence de T13/T14, à comparer avant suspension. Aucun nettoyage automatique des tâches externes.
+Cinq tâches locales autonomes exécutent ces cinq blocs dans des chats séparés. L'ancienne tâche regroupée est supprimée pour éviter les doublons. Les anciennes tâches externes T01–T25 montrées en captures n'ont pas été désactivées par cette configuration : ne pas prétendre le contraire. Amazon FBA Lab recouvre désormais aussi les tâches Amazon T05/T18; le cinquième bloc recouvre la partie stratégie d'agence de T13/T14, à comparer avant suspension. Aucun nettoyage automatique des tâches externes.
 
 Destinataire et expéditeur restent dans l'instruction privée de la tâche. Vérifier le compte expéditeur voulu avant envoi, respecter le journal anti-doublons et conserver les messages en attente si l'expéditeur n'est pas connecté. Cela ne doit pas bloquer le travail de préparation ni les publications GitHub. Aucun compte vendeur, coût cloud, contrat, déploiement externe ou message à un tiers automatiquement autorisé par ce programme.

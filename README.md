@@ -44,7 +44,7 @@ No license has been selected yet.
 
 ## Production quotidienne du portfolio
 
-Une seule tâche quotidienne à 08:30 Europe/Paris regroupe cinq blocs. Trois labs techniques publient leurs sources sur GitHub; deux blocs supplémentaires fournissent des dossiers privés par mail. Cycle produits : deux nouveaux MVP distincts web/mobile tous les 21 jours, avec critères et limites explicités.
+Cinq tâches quotidiennes autonomes à 08:30 Europe/Paris exécutent chacune leur lab dans un nouveau chat, pour poser des questions sans mélanger les sujets. Trois labs techniques publient leurs sources sur GitHub; deux blocs supplémentaires fournissent des dossiers privés. Un seul compte rendu quotidien commun par mail est conservé, lorsque tous les résultats sont disponibles et l'expéditeur autorisé connecté. Cycle produits : deux nouveaux MVP distincts web/mobile tous les 21 jours, avec critères et limites explicités.
 
 | Bloc | Destination |
 |---|---|
@@ -59,6 +59,7 @@ Ce dépôt central contient le plan, les tests de l'orchestrateur, les reçus de
 Le mail est envoyé par la tâche Codex via une connexion Gmail séparée, lorsqu'elle est disponible; un fichier de mail préparé ne signifie jamais « envoyé ».
 
 - [Organisation validée des cinq blocs](docs/ORGANISATION-5-BLOCS.md)
+- [Tâches et chats séparés](docs/EXECUTIONS-SEPAREES.md)
 - [Comparaison des anciennes tâches](docs/ORGANISATION-ET-DOUBLONS.md)
 - [Mode opératoire](docs/OPERATIONS.md)
 - [Configuration des parcours](factory.config.json)

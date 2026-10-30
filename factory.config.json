@@ -136,5 +136,13 @@
     "cloud-native-labs": "engineering-lab",
     "business-automation": "ai-agency-lab"
   },
-  "organizationPath": "docs/ORGANISATION-5-BLOCS.md"
+  "organizationPath": "docs/ORGANISATION-5-BLOCS.md",
+  "scheduling": {
+    "mode": "five-standalone-tasks",
+    "newChatPerRun": true,
+    "localTime": "08:30",
+    "timezone": "Europe/Paris",
+    "mailPolicy": "one-consolidated-daily-email-after-all-lab-results",
+    "documentation": "docs/EXECUTIONS-SEPAREES.md"
+  }
 }
