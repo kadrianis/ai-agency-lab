@@ -8,8 +8,8 @@
   "repositories": {
     "ai-business-platform": {
       "status": "accessible",
-      "sha": "04aeb300fef0a51a9ac99988b218fe6f74cd608f",
-      "url": "https://github.com/kadrianis/ai-business-platform/commit/04aeb300fef0a51a9ac99988b218fe6f74cd608f"
+      "sha": "61c98f95de7b858b2894fba80f33d293279ab95e",
+      "url": "https://github.com/kadrianis/ai-business-platform/commit/61c98f95de7b858b2894fba80f33d293279ab95e"
     },
     "mobile-starter-app": {
       "status": "blocked",
@@ -17,13 +17,13 @@
     },
     "cloud-native-labs": {
       "status": "accessible",
-      "sha": "42da9c69bf175f383ce651178ab6217de628f74a",
-      "url": "https://github.com/kadrianis/cloud-native-labs/commit/42da9c69bf175f383ce651178ab6217de628f74a"
+      "sha": "0b514f696701ce452fa5044a11a1394899fde0da",
+      "url": "https://github.com/kadrianis/cloud-native-labs/commit/0b514f696701ce452fa5044a11a1394899fde0da"
     },
     "business-automation": {
       "status": "accessible",
-      "sha": "dc9ce93a8b24088415313887e7c96325b3f9bce7",
-      "url": "https://github.com/kadrianis/business-automation/commit/dc9ce93a8b24088415313887e7c96325b3f9bce7"
+      "sha": "34d80ba4463b13250dfd4b5c843866ccdeb3aadc",
+      "url": "https://github.com/kadrianis/business-automation/commit/34d80ba4463b13250dfd4b5c843866ccdeb3aadc"
     }
   },
   "receipts": [
