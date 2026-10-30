@@ -27,8 +27,8 @@
     },
     "business-automation": {
       "status": "accessible",
-      "sha": "616ed5c880015de28997ff508a9eea74bf6c36e2",
-      "url": "https://github.com/kadrianis/business-automation/commit/616ed5c880015de28997ff508a9eea74bf6c36e2"
+      "sha": "3d8f082471493733f0f7f37b4ef8896817d9bf5c",
+      "url": "https://github.com/kadrianis/business-automation/commit/3d8f082471493733f0f7f37b4ef8896817d9bf5c"
     },
     "ai-business-articles": {
       "status": "accessible",
@@ -58,38 +58,45 @@
   "lanes": {
     "web": {
       "target": "github",
+      "publicationMode": "automatic",
       "blocker": null,
       "status": "not-verified"
     },
     "mobile": {
       "target": "github",
+      "publicationMode": "automatic",
       "blocker": null,
       "status": "not-verified"
     },
     "engineering": {
       "target": "github",
+      "publicationMode": "automatic",
       "blocker": null,
       "status": "not-verified"
     },
     "cloud": {
       "target": "github",
+      "publicationMode": "automatic",
       "blocker": null,
       "status": "not-verified"
     },
     "agent": {
-      "target": "github",
+      "target": "huggingface",
+      "publicationMode": "manual-email",
       "blocker": null,
-      "status": "not-verified"
+      "status": "manual-publication-by-user"
     },
     "automation": {
-      "target": "github",
+      "target": "make",
+      "publicationMode": "manual-email",
       "blocker": null,
-      "status": "source-published"
+      "status": "manual-publication-by-user"
     },
     "article": {
-      "target": "github",
+      "target": "medium",
+      "publicationMode": "manual-email",
       "blocker": null,
-      "status": "not-verified"
+      "status": "manual-publication-by-user"
     }
   }
 }
