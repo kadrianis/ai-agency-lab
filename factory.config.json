@@ -4,7 +4,7 @@
   "timezone": "Europe/Paris",
   "cycleDays": 21,
   "publicationScope": "github-only",
-  "notification": {"channel": "gmail-connector", "policy": "after-verified-publication", "recipientStorage": "private automation prompt", "status": "connection-required"},
+  "notification": {"channel": "gmail-connector", "policy": "after-verified-publication", "recipientStorage": "private automation prompt", "status": "connected-first-send-verified"},
   "lanes": {
     "web": {"repo": "ai-business-platform", "target": "github", "product": "cycle-001: AgentOps CRM, suivi des missions d'une agence IA"},
     "mobile": {"repo": "mobile-starter-app", "target": "github", "product": "cycle-001: FieldBrief, comptes rendus de visites terrain"},

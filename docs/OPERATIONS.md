@@ -37,7 +37,7 @@ Le destinataire est uniquement dans l'instruction privée de l'automatisation. I
 
 La CLI gh de kadrianis est désormais valide avec repo et workflow; les six dépôts sont accessibles ADMIN, dont mobile-starter-app. Si le plugin GitHub refuse encore en 403, utiliser cette CLI. Ne pas afficher les jetons. GITHUB_TOKEN Actions est limité au dépôt courant; les autres dépôts sont publiés via Codex/gh autorisé. Aucun jeton personnel dans Actions.
 
-Gmail : connexion encore à confirmer; aucun mail envoyé par cette usine. Make reste configuré mais hors périmètre, ne plus tenter sa connexion. Azure personnel est connecté séparément; aucun déploiement demandé, FNC professionnel exclu.
+Gmail : compte destinataire connecté et premier mail réellement envoyé le 30/10/2026 après relecture du commit et de son run CI réussi. L'identifiant Gmail et le destinataire restent dans .local/mail-ledger, hors Git; consulter ce journal avant tout renvoi. Le fichier public reports/DATE.email.json reste une préparation, son champ not-sent ne doit pas écraser le journal privé d'envoi. Make reste configuré mais hors périmètre, ne plus tenter sa connexion. Azure personnel est connecté séparément; aucun déploiement demandé, FNC professionnel exclu.
 
 ## Validation locale
 
