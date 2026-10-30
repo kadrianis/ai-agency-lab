@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-30",
+  "cycle": {
+    "number": 1,
+    "day": 2
+  },
+  "phase": "problème, parcours, squelette exécutable et tests",
+  "repositories": {
+    "ai-business-platform": {
+      "status": "accessible",
+      "sha": "04aeb300fef0a51a9ac99988b218fe6f74cd608f",
+      "url": "https://github.com/kadrianis/ai-business-platform/commit/04aeb300fef0a51a9ac99988b218fe6f74cd608f"
+    },
+    "mobile-starter-app": {
+      "status": "blocked",
+      "reason": "GitHub HTTP 404"
+    },
+    "cloud-native-labs": {
+      "status": "accessible",
+      "sha": "42da9c69bf175f383ce651178ab6217de628f74a",
+      "url": "https://github.com/kadrianis/cloud-native-labs/commit/42da9c69bf175f383ce651178ab6217de628f74a"
+    },
+    "ai-agents": {
+      "status": "accessible",
+      "sha": "f8bf76edf8cf5f1e8d133f144687b2c74b5c87d7",
+      "url": "https://github.com/kadrianis/ai-agents/commit/f8bf76edf8cf5f1e8d133f144687b2c74b5c87d7"
+    },
+    "business-automation": {
+      "status": "accessible",
+      "sha": "08bb20fbc0475427bfc4ca3cec5a564896206229",
+      "url": "https://github.com/kadrianis/business-automation/commit/08bb20fbc0475427bfc4ca3cec5a564896206229"
+    },
+    "ai-business-articles": {
+      "status": "accessible",
+      "sha": "bac0871bcb032b7eccfd74313d87f0a81c53d541",
+      "url": "https://github.com/kadrianis/ai-business-articles/commit/bac0871bcb032b7eccfd74313d87f0a81c53d541"
+    }
+  },
+  "receipts": [],
+  "lanes": {
+    "web": {
+      "target": "github",
+      "blocker": null,
+      "status": "not-verified"
+    },
+    "mobile": {
+      "target": "github",
+      "blocker": null,
+      "status": "not-verified"
+    },
+    "engineering": {
+      "target": "github",
+      "blocker": null,
+      "status": "not-verified"
+    },
+    "cloud": {
+      "target": "github",
+      "blocker": null,
+      "status": "not-verified"
+    },
+    "agent": {
+      "target": "github",
+      "blocker": null,
+      "status": "not-verified"
+    },
+    "automation": {
+      "target": "github",
+      "blocker": null,
+      "status": "not-verified"
+    },
+    "article": {
+      "target": "github",
+      "blocker": null,
+      "status": "not-verified"
+    }
+  }
+}
