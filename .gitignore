@@ -1,4 +1,4 @@
-﻿.env
+.env
 .env.*
 !.env.example
 **/bin/
@@ -7,3 +7,5 @@ node_modules/
 __pycache__/
 .venv/
 *.user
+
+.local/

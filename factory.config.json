@@ -1,0 +1,17 @@
+{
+  "owner": "kadrianis",
+  "startDate": "2026-10-29",
+  "timezone": "Europe/Paris",
+  "cycleDays": 21,
+  "publicationScope": "github-only",
+  "notification": {"channel": "gmail-connector", "policy": "after-verified-publication", "recipientStorage": "private automation prompt", "status": "connection-required"},
+  "lanes": {
+    "web": {"repo": "ai-business-platform", "target": "github", "product": "cycle-001: AgentOps CRM, suivi des missions d'une agence IA"},
+    "mobile": {"repo": "mobile-starter-app", "target": "github", "product": "cycle-001: FieldBrief, comptes rendus de visites terrain"},
+    "engineering": {"repo": "cloud-native-labs", "target": "github"},
+    "cloud": {"repo": "cloud-native-labs", "target": "github", "deliverable": "Infrastructure reproductible sans déploiement cloud automatique"},
+    "agent": {"repo": "ai-agents", "target": "github"},
+    "automation": {"repo": "business-automation", "target": "github", "deliverable": "Scripts exécutables, sans Make ou n8n"},
+    "article": {"repo": "ai-business-articles", "target": "github", "deliverable": "Articles français en Markdown"}
+  }
+}
