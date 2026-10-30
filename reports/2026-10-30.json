@@ -6,24 +6,24 @@
   },
   "phase": "problème, parcours, squelette exécutable et tests",
   "repositories": {
-    "ai-business-platform": {
+    "product-lab-web": {
       "status": "accessible",
       "sha": "61c98f95de7b858b2894fba80f33d293279ab95e",
-      "url": "https://github.com/kadrianis/ai-business-platform/commit/61c98f95de7b858b2894fba80f33d293279ab95e"
+      "url": "https://github.com/kadrianis/product-lab-web/commit/61c98f95de7b858b2894fba80f33d293279ab95e"
     },
-    "mobile-starter-app": {
+    "product-lab-mobile": {
       "status": "blocked",
       "reason": "GitHub HTTP 404"
     },
-    "cloud-native-labs": {
+    "engineering-lab": {
       "status": "accessible",
       "sha": "0b514f696701ce452fa5044a11a1394899fde0da",
-      "url": "https://github.com/kadrianis/cloud-native-labs/commit/0b514f696701ce452fa5044a11a1394899fde0da"
+      "url": "https://github.com/kadrianis/engineering-lab/commit/0b514f696701ce452fa5044a11a1394899fde0da"
     },
-    "business-automation": {
+    "ai-agency-lab": {
       "status": "accessible",
-      "sha": "02dfd46e4f8cbbd6116d2a2de1a850ce705dfad6",
-      "url": "https://github.com/kadrianis/business-automation/commit/02dfd46e4f8cbbd6116d2a2de1a850ce705dfad6"
+      "sha": "7e2c86bfa3f6165bbaf4868f8bd3312c19932707",
+      "url": "https://github.com/kadrianis/ai-agency-lab/commit/7e2c86bfa3f6165bbaf4868f8bd3312c19932707"
     }
   },
   "receipts": [
@@ -87,6 +87,18 @@
       "publicationMode": "manual-email",
       "blocker": null,
       "status": "manual-publication-by-user"
+    },
+    "amazon": {
+      "target": "email",
+      "publicationMode": "email-only",
+      "blocker": null,
+      "status": "private-email-not-verified"
+    },
+    "agencyStrategy": {
+      "target": "email",
+      "publicationMode": "email-only",
+      "blocker": null,
+      "status": "private-email-not-verified"
     }
   }
 }
