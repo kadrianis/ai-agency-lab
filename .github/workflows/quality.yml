@@ -1,0 +1,31 @@
+name: Repository privacy checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  privacy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Reject local administration files
+        shell: python
+        run: |
+          import pathlib, re, subprocess
+          files = subprocess.check_output(['git', 'ls-files', '-z']).decode().split('\0')
+          blocked = re.compile(r'(^|/)(\.local|reports|receipts|mail-ledger|lab-runs)(/|$)|(^|/)factory\.config\.json$|^docs/(OPERATIONS|ORGANISATION[^/]*|EXECUTIONS-SEPAREES|PROGRAMME-21-JOURS)\.md$')
+          violations = [name for name in files if name and blocked.search(name)]
+          for name in files:
+              if name and pathlib.Path(name).suffix.lower() in ('.md', '.json', '.txt'):
+                  text = pathlib.Path(name).read_text(encoding='utf-8')
+                  if re.search(r'[A-Za-z]:[/\\]Users[/\\]|[\w.+-]+@(gmail|outlook|hotmail)\.com', text, re.I):
+                      violations.append(name)
+          if violations:
+              raise SystemExit('Private administration content must stay local: ' + ', '.join(sorted(set(violations))))
+          print('No local administration files or personal account details detected.')

@@ -9,3 +9,12 @@ __pycache__/
 *.user
 
 .local/
+
+# Local production administration
+/factory.config.json
+/receipts/
+/reports/
+/docs/OPERATIONS.md
+/docs/ORGANISATION-*.md
+/docs/EXECUTIONS-SEPAREES.md
+/docs/PROGRAMME-21-JOURS.md
