@@ -1,5 +1,11 @@
 # Portfolio : publier sur GitHub, apprendre après
 
+## Exigence pédagogique et livraison finale
+
+Le [programme sur 21 jours](PROGRAMME-21-JOURS.md) fait partie des instructions obligatoires. Fournir chaque jour exercice, correction complète, choix/alternatives d'architecture et de base de données, tests unitaires/intégration/bout en bout, schémas, publication, exploitation et vérification des acquis. Le mail doit être détaillé et structuré; joindre les dossiers complets pour les fichiers volumineux. Les volets GitHub sont réalisés et documentés avant annonce de publication.
+
+Azure est ajouté aux publications manuelles : l'usine publie le code du lab cloud sur GitHub et envoie la solution, les commandes, les coûts, les contrôles et le nettoyage; l'utilisateur déploie lui-même sur son abonnement personnel déjà vérifié. Au jour 21, préparer mise en ligne web et distribution mobile App Store/Google Play; anticiper comptes, signature, tests et revue dès J1. Aucune garantie d'approbation store à J21, aucun achat ni déploiement payant par l'usine. Les choix microservices/Kubernetes doivent être pratiqués et expliqués, leur nécessité dans chaque produit justifiée.
+
 Périmètre corrigé le 30/10/2026 : publication automatique sur GitHub pour web, mobile, mini-labs et infrastructure. Pour Make, Hugging Face et Medium : préparer le livrable complet, tester ce qui est testable et l'envoyer par mail; l'utilisateur publie lui-même sur ces plateformes. Aucun nouveau push automatique de ces trois parcours n'est demandé. Aucun compte externe n'est supprimé et aucun déploiement Azure automatique n'est autorisé.
 
 ## Fonctionnement
