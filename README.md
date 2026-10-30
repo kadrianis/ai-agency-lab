@@ -1,6 +1,6 @@
 # AI Agency Lab — Orchestration du portfolio
 
-Créer des agents IA, des automatisations et des offres pouvant être vendues à des clients. Ce dépôt contient actuellement le code de pilotage du portfolio; les livrables destinés à Hugging Face, Make et Medium sont préparés par mail pour publication manuelle.
+Créer des agents IA, des automatisations et des offres pouvant être vendues à des clients. Ce dépôt contient actuellement le code de pilotage du portfolio. Les prochains livrables techniques du lab seront publiés sous agency/agents, agency/automations et agency/offers après tests; ces dossiers cibles ne constituent pas encore des solutions livrées. Les fichiers et guides HF/Make sont envoyés par mail pour déploiement manuel; l'article Medium reste un livrable indépendant par mail.
 
 ## Overview
 
@@ -50,6 +50,7 @@ Ce dépôt central contient le plan, les tests de l'orchestrateur, les reçus de
 
 Le mail est envoyé par la tâche Codex via une connexion Gmail séparée, lorsqu'elle est disponible; un fichier de mail préparé ne signifie jamais « envoyé ».
 
+- [Organisation des trois labs et comparaison des anciennes tâches](docs/ORGANISATION-ET-DOUBLONS.md)
 - [Mode opératoire](docs/OPERATIONS.md)
 - [Configuration des parcours](factory.config.json)
 - [Exécutions des tests et audits](https://github.com/kadrianis/business-automation/actions)

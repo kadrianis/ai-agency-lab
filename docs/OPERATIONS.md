@@ -6,7 +6,7 @@
 - Engineering Lab : concepts d'architecture, cloud, infrastructure, sécurité et IA explorés par des mini-projets démontrables. Le volet Cloud & Production Engineering couvre déploiement et exploitation.
 - AI Agency Lab : agents IA, automatisations et offres de service pouvant être vendues à des clients. Le code de l'orchestrateur reste dans business-automation; cet intitulé ne signifie pas que des agents ou offres y sont déjà livrés.
 
-Dans la présentation quotidienne en quatre familles, le dernier intitulé est « AI Agency Lab », sans « & Medium ». Medium reste le canal manuel des articles, pas le nom du lab ni une publication automatique. Les titres README et descriptions GitHub sont harmonisés; les identifiants des dépôts et les règles de publication restent ceux de factory.config.json.
+L'organisation définitive comporte trois labs de code et un article indépendant par mail : Product Lab, Engineering Lab, AI Agency Lab, puis Article entrepreneuriat IA prêt pour Medium. Les trois labs publient leurs sources GitHub. Les déploiements Azure/Hugging Face/Make et l'article Medium sont réalisés manuellement par l'utilisateur. La comparaison des anciennes tâches est dans [Organisation et doublons](ORGANISATION-ET-DOUBLONS.md).
 
 ## Exigence pédagogique et livraison finale
 
@@ -14,11 +14,11 @@ Le [programme sur 21 jours](PROGRAMME-21-JOURS.md) fait partie des instructions 
 
 Azure est ajouté aux publications manuelles : l'usine publie le code du lab cloud sur GitHub et envoie la solution, les commandes, les coûts, les contrôles et le nettoyage; l'utilisateur déploie lui-même sur son abonnement personnel déjà vérifié. Au jour 21, préparer mise en ligne web et distribution mobile App Store/Google Play; anticiper comptes, signature, tests et revue dès J1. Aucune garantie d'approbation store à J21, aucun achat ni déploiement payant par l'usine. Les choix microservices/Kubernetes doivent être pratiqués et expliqués, leur nécessité dans chaque produit justifiée.
 
-Périmètre corrigé le 30/10/2026 : publication automatique sur GitHub pour web, mobile, mini-labs et infrastructure. Pour Make, Hugging Face et Medium : préparer le livrable complet, tester ce qui est testable et l'envoyer par mail; l'utilisateur publie lui-même sur ces plateformes. Aucun nouveau push automatique de ces trois parcours n'est demandé. Aucun compte externe n'est supprimé et aucun déploiement Azure automatique n'est autorisé.
+Périmètre corrigé à nouveau le 30/10/2026 à la demande de l'utilisateur : les trois labs publient le code sur GitHub, y compris les sources d'agents et d'automatisations dans business-automation. Les guides et fichiers nécessaires à Azure, Hugging Face et Make sont envoyés par mail pour déploiement utilisateur. L'article Medium est envoyé complet par mail sans publication GitHub ni Medium automatique. Aucun nouveau dépôt n'est nécessaire.
 
 ## Fonctionnement
 
-Une seule tâche Codex active, à 08:30 Europe/Paris, contient sept volets quotidiens. Pour GitHub : créer, tester, publier, relire commit et CI du même SHA, puis expliquer par mail. Pour Make/Hugging Face/Medium : préparer, tester localement, fournir les fichiers et étapes de publication dans le mail. Ne jamais dire « publié » pour une préparation manuelle. L'envoi des livrables manuels ne dépend pas du succès des pistes GitHub. Destinataire privé autorisé uniquement.
+Une seule tâche Codex active, à 08:30 Europe/Paris, contient sept volets regroupés en trois labs et un article. Pour les sources GitHub : créer, tester, publier, relire commit et CI du même SHA, puis expliquer par mail. Pour les quatre plateformes externes : préparer, tester ce qui est testable, fournir fichiers et procédures, puis l'utilisateur publie. Ne pas confondre code publié avec application mise en ligne. L'envoi des paquets manuels prêts ne dépend pas du succès GitHub. Les schémas d'organisation ne constituent pas une preuve d'exécution quotidienne.
 
 La création quotidienne est réalisée par la tâche Codex; GitHub Actions exécute les tests et audite les preuves. Actions n'est pas configuré comme générateur de code. La planification locale dépend de Codex et de ses connexions; aucun modèle ni abonnement API payant n'est installé dans Actions.
 
@@ -28,7 +28,7 @@ Cycle démarré le 29/10/2026, J21 le 18/11, cycle 2 le 19/11. Deux nouveaux MVP
 
 J1–3 : problème, parcours et squelette exécutable. J4–7 : fonction métier, API et persistance. J8–12 : authentification, isolation et intégrations. J13–16 : tests, sécurité, Docker et observabilité. J17–20 : démo reproductible et corrections. J21 : release testable, documentation et retour arrière. Aucun déploiement payant ni store sans accord spécifique.
 
-Autres productions quotidiennes : mini-lab et infrastructure publiés dans cloud-native-labs; agent évalué et paquet prêt à publier manuellement sur Hugging Face; scénario Make et guide; article Medium complet en français. Les paquets manuels sont conservés localement sous .local/manual-deliveries/DATE/ puis joints aux mails ou intégrés à leur corps, sans secrets. Les dépôts ai-agents et ai-business-articles sont supprimés à la demande de l'utilisateur après sauvegarde locale : ne pas les recréer ni les auditer comme cibles GitHub. Le dépôt business-automation héberge toujours l'orchestrateur GitHub lui-même, distinct des scénarios Make manuels; son target=github conserve la compatibilité du reçu historique de l'orchestrateur. publicationMode=manual-email prévaut pour les nouvelles productions Make. Articles : entrepreneurs opérant avec agents IA, cas réels sourcés ou entreprises explicitement fictives et hypothèses chiffrées.
+Sources Engineering Lab dans cloud-native-labs. Sources AI Agency Lab dans business-automation/agency/agents et agency/automations, avec offre liée dans agency/offers : cible, problème, valeur démontrée, coût/hypothèses tarifaires et limites. Ne pas présenter une hypothèse commerciale comme un revenu observé. Le même dépôt conserve l'orchestrateur. Les dépôts supprimés ai-agents et ai-business-articles ne doivent pas être recréés. Paquets privés dans .local/manual-deliveries/DATE pour Azure/HF/Make/Medium. L'article reste en français, centré sur les entrepreneurs opérant avec agents IA; faits sourcés et entreprises fictives explicitement distingués.
 
 ## Livraison et preuves
 

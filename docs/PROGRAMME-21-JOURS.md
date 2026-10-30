@@ -6,8 +6,8 @@
 |---|---|---|
 | GitHub | Publier code, tests, documentation, schémas et preuves après contrôle | Lire, lancer, expérimenter |
 | Azure personnel | Publier le code d'infrastructure sur GitHub; envoyer exercice, correction et procédure de déploiement | Déployer, vérifier l'URL, puis nettoyer les ressources |
-| Hugging Face | Envoyer code d'agent complet, évaluations, dépendances et guide Space | Créer/publier le Space, configurer les secrets nécessaires |
-| Make | Envoyer scénario, données de test, solution et guide de montage/import si validé | Monter/importer, tester et activer le scénario |
+| Hugging Face | Publier les sources agent/évaluations dans AI Agency Lab sur GitHub; envoyer le paquet et guide Space | Créer/publier le Space, configurer les secrets nécessaires |
+| Make | Publier les sources ou le blueprint validable et leurs tests dans AI Agency Lab sur GitHub; envoyer la solution et le guide | Monter/importer, tester et activer le scénario |
 | Medium | Envoyer article final français, titre, résumé, tags et sources | Relire et publier l'article |
 
 Ces cinq cibles principales ont des rôles différents : GitHub héberge les sources, Azure héberge les applications et ressources cloud. App Store/Google Play sont des canaux supplémentaires pour le mobile, à préparer dès le début du cycle. Leur validation et leurs comptes ne sont pas remplacés par un compte Azure ou GitHub.
