@@ -1,6 +1,6 @@
-﻿# business-automation
+# AI Agency Lab — Orchestration du portfolio
 
-Business automation workflows using n8n, Make and AI
+Créer des agents IA, des automatisations et des offres pouvant être vendues à des clients. Ce dépôt contient actuellement le code de pilotage du portfolio; les livrables destinés à Hugging Face, Make et Medium sont préparés par mail pour publication manuelle.
 
 ## Overview
 
@@ -32,7 +32,7 @@ GitHub Actions, OpenTelemetry and related technologies.
 
 ## Status
 
-Initialized - first implementation coming soon.
+Orchestrateur implémenté et testé. Les agents, scénarios Make et offres commerciales sont des parcours de production; leur disponibilité n'est pas attestée par ce seul dépôt.
 
 ## Security
 
@@ -44,7 +44,7 @@ No license has been selected yet.
 
 ## Production quotidienne du portfolio
 
-La tâche Codex construit, teste et publie les sources sur les six dépôts GitHub du portfolio, puis prépare un compte rendu pédagogique après vérification. Cycle : deux nouveaux MVP distincts (web et mobile) tous les 21 jours.
+La tâche Codex construit, teste et publie les sources des SaaS et labs sur GitHub, puis prépare un compte rendu pédagogique après vérification. Quatre dépôts restent actifs : les SaaS web/mobile, Engineering Lab et cet orchestrateur. Cycle : deux nouveaux MVP distincts (web et mobile) tous les 21 jours. Les autres plateformes reçoivent des livrables par mail, à publier manuellement.
 
 Ce dépôt central contient le plan, les tests de l'orchestrateur, les reçus de publication et un audit quotidien GitHub Actions. Les reçus sont vérifiés par relecture du commit et du run CI réussi sur le même SHA. L'audit ne génère pas de SaaS et ne prouve pas un déploiement applicatif.
 

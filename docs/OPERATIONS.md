@@ -1,5 +1,13 @@
 # Portfolio : publier sur GitHub, apprendre après
 
+## Intitulés de présentation
+
+- Product Lab : deux SaaS distincts, web et mobile, renouvelés par cycle de 21 jours.
+- Engineering Lab : concepts d'architecture, cloud, infrastructure, sécurité et IA explorés par des mini-projets démontrables. Le volet Cloud & Production Engineering couvre déploiement et exploitation.
+- AI Agency Lab : agents IA, automatisations et offres de service pouvant être vendues à des clients. Le code de l'orchestrateur reste dans business-automation; cet intitulé ne signifie pas que des agents ou offres y sont déjà livrés.
+
+Dans la présentation quotidienne en quatre familles, le dernier intitulé est « AI Agency Lab », sans « & Medium ». Medium reste le canal manuel des articles, pas le nom du lab ni une publication automatique. Les titres README et descriptions GitHub sont harmonisés; les identifiants des dépôts et les règles de publication restent ceux de factory.config.json.
+
 ## Exigence pédagogique et livraison finale
 
 Le [programme sur 21 jours](PROGRAMME-21-JOURS.md) fait partie des instructions obligatoires. Fournir chaque jour exercice, correction complète, choix/alternatives d'architecture et de base de données, tests unitaires/intégration/bout en bout, schémas, publication, exploitation et vérification des acquis. Le mail doit être détaillé et structuré; joindre les dossiers complets pour les fichiers volumineux. Les volets GitHub sont réalisés et documentés avant annonce de publication.
