@@ -13,7 +13,7 @@ async function github(path) {
   return response.json();
 }
 const repositories = {};
-for (const repo of new Set(Object.values(config.lanes).map(l => l.repo))) {
+for (const repo of new Set(Object.values(config.lanes).map(l => l.repo).filter(Boolean))) {
   try {
     const meta = await github(repo);
     const commit = await github(`${repo}/commits/${meta.default_branch}`);

@@ -12,8 +12,8 @@
     "mobile": {"repo": "mobile-starter-app", "target": "github", "publicationMode": "automatic", "product": "cycle-001: FieldBrief, comptes rendus de visites terrain"},
     "engineering": {"repo": "cloud-native-labs", "target": "github", "publicationMode": "automatic"},
     "cloud": {"repo": "cloud-native-labs", "target": "github", "publicationMode": "automatic", "deployment": {"platform": "azure", "publicationMode": "manual-email"}, "deliverable": "Code infrastructure documenté publié sur GitHub; exercice, correction, coûts, vérifications et nettoyage envoyés pour déploiement Azure manuel"},
-    "agent": {"repo": "ai-agents", "target": "github", "publicationMode": "manual-email", "manualPlatform": "huggingface", "deliverable": "Code, évaluations, fichiers et guide de publication fournis par mail; aucun nouveau push automatique pour ce parcours"},
+    "agent": {"target": "huggingface", "publicationMode": "manual-email", "manualPlatform": "huggingface", "deliverable": "Code, évaluations, fichiers et guide de publication fournis par mail; aucun dépôt GitHub pour ce parcours"},
     "automation": {"repo": "business-automation", "target": "github", "publicationMode": "manual-email", "manualPlatform": "make", "deliverable": "Scénario préparé, blueprint si validable et guide de montage fournis par mail; publication par utilisateur"},
-    "article": {"repo": "ai-business-articles", "target": "github", "publicationMode": "manual-email", "manualPlatform": "medium", "deliverable": "Article français complet, titre, résumé, tags et sources fournis par mail; publication par utilisateur"}
+    "article": {"target": "medium", "publicationMode": "manual-email", "manualPlatform": "medium", "deliverable": "Article français complet, titre, résumé, tags et sources fournis par mail; publication par utilisateur"}
   }
 }
