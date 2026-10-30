@@ -22,8 +22,8 @@
     },
     "business-automation": {
       "status": "accessible",
-      "sha": "34d80ba4463b13250dfd4b5c843866ccdeb3aadc",
-      "url": "https://github.com/kadrianis/business-automation/commit/34d80ba4463b13250dfd4b5c843866ccdeb3aadc"
+      "sha": "02dfd46e4f8cbbd6116d2a2de1a850ce705dfad6",
+      "url": "https://github.com/kadrianis/business-automation/commit/02dfd46e4f8cbbd6116d2a2de1a850ce705dfad6"
     }
   },
   "receipts": [
@@ -71,16 +71,16 @@
       "status": "not-verified"
     },
     "agent": {
-      "target": "huggingface",
-      "publicationMode": "manual-email",
+      "target": "github",
+      "publicationMode": "automatic",
       "blocker": null,
-      "status": "manual-publication-by-user"
+      "status": "not-verified"
     },
     "automation": {
-      "target": "make",
-      "publicationMode": "manual-email",
+      "target": "github",
+      "publicationMode": "automatic",
       "blocker": null,
-      "status": "manual-publication-by-user"
+      "status": "source-published"
     },
     "article": {
       "target": "medium",
