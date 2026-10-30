@@ -1,5 +1,15 @@
 import assert from 'node:assert/strict';
 
+export function canonicalGithubUrl(value, config) {
+  const url = new URL(value);
+  const parts = url.pathname.split('/');
+  if (url.hostname === 'github.com' && parts[1] === config.owner && config.repoAliases?.[parts[2]]) {
+    parts[2] = config.repoAliases[parts[2]];
+    url.pathname = parts.join('/');
+  }
+  return url.href;
+}
+
 export function dateInParis(now = new Date()) {
   return new Intl.DateTimeFormat('en-CA', {timeZone: 'Europe/Paris', year: 'numeric', month: '2-digit', day: '2-digit'}).format(now);
 }
@@ -27,10 +37,10 @@ export function validateReceipt(r, config) {
   assert(r.externalId && r.summary && r.lesson, 'Identifiant, résultat et explication requis');
   if (r.risk !== 'routine') assert(r.approvalUrl, 'Approbation explicite requise');
   if (r.platform === 'github') {
-    const url = new URL(r.url);
+    const url = new URL(canonicalGithubUrl(r.url, config));
     assert.equal(url.hostname, 'github.com');
     assert.equal(url.pathname, `/${config.owner}/${config.lanes[r.lane].repo}/commit/${r.sourceSha}`);
-    const quality = new URL(r.quality.url);
+    const quality = new URL(canonicalGithubUrl(r.quality.url, config));
     assert.equal(quality.hostname, 'github.com');
     assert.match(quality.pathname, new RegExp(`^/${config.owner}/${config.lanes[r.lane].repo}/actions/runs/[0-9]+$`));
   }

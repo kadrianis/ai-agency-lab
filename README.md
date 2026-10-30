@@ -1,6 +1,6 @@
-# AI Agency Lab — Orchestration du portfolio
+# AI Agency Lab
 
-Créer des agents IA, des automatisations et des offres pouvant être vendues à des clients. Ce dépôt contient actuellement le code de pilotage du portfolio. Les prochains livrables techniques du lab seront publiés sous agency/agents, agency/automations et agency/offers après tests; ces dossiers cibles ne constituent pas encore des solutions livrées. Les fichiers et guides HF/Make sont envoyés par mail pour déploiement manuel; l'article Medium reste un livrable indépendant par mail.
+Portfolio technique d'agents IA et d'automatisations métier : sources, tests, démonstrations et documentation. Ce dépôt contient actuellement le code de pilotage du portfolio. Les prochaines réalisations techniques seront publiées sous agency/agents et agency/automations après tests; ces chemins cibles ne constituent pas encore des solutions livrées. Les guides HF/Make sont envoyés pour déploiement manuel. La construction commerciale de l'agence et son média font partie d'un dossier privé séparé.
 
 ## Overview
 
@@ -44,15 +44,24 @@ No license has been selected yet.
 
 ## Production quotidienne du portfolio
 
-La tâche Codex construit, teste et publie les sources des SaaS et labs sur GitHub, puis prépare un compte rendu pédagogique après vérification. Quatre dépôts restent actifs : les SaaS web/mobile, Engineering Lab et cet orchestrateur. Cycle : deux nouveaux MVP distincts (web et mobile) tous les 21 jours. Les autres plateformes reçoivent des livrables par mail, à publier manuellement.
+Une seule tâche quotidienne à 08:30 Europe/Paris regroupe cinq blocs. Trois labs techniques publient leurs sources sur GitHub; deux blocs supplémentaires fournissent des dossiers privés par mail. Cycle produits : deux nouveaux MVP distincts web/mobile tous les 21 jours, avec critères et limites explicités.
+
+| Bloc | Destination |
+|---|---|
+| Product Lab | [SaaS web](https://github.com/kadrianis/product-lab-web) et [SaaS mobile](https://github.com/kadrianis/product-lab-mobile) |
+| Engineering Lab | [Mini-projets et infrastructure](https://github.com/kadrianis/engineering-lab) |
+| AI Agency Lab | Ce dépôt : portfolio technique et orchestrateur |
+| Amazon FBA Lab | Études France/USA/Canada et formation par mail, aucun dépôt |
+| Personal Branding & AI Business Lab | Article Medium complet et stratégie d'agence par mail, aucun dépôt |
 
 Ce dépôt central contient le plan, les tests de l'orchestrateur, les reçus de publication et un audit quotidien GitHub Actions. Les reçus sont vérifiés par relecture du commit et du run CI réussi sur le même SHA. L'audit ne génère pas de SaaS et ne prouve pas un déploiement applicatif.
 
 Le mail est envoyé par la tâche Codex via une connexion Gmail séparée, lorsqu'elle est disponible; un fichier de mail préparé ne signifie jamais « envoyé ».
 
-- [Organisation des trois labs et comparaison des anciennes tâches](docs/ORGANISATION-ET-DOUBLONS.md)
+- [Organisation validée des cinq blocs](docs/ORGANISATION-5-BLOCS.md)
+- [Comparaison des anciennes tâches](docs/ORGANISATION-ET-DOUBLONS.md)
 - [Mode opératoire](docs/OPERATIONS.md)
 - [Configuration des parcours](factory.config.json)
-- [Exécutions des tests et audits](https://github.com/kadrianis/business-automation/actions)
+- [Exécutions des tests et audits](https://github.com/kadrianis/ai-agency-lab/actions)
 
 Vérifier localement avec Node 22+ : `npm test`, puis `npm run audit` avec accès réseau GitHub. Aucun paquet tiers nécessaire. Ne jamais publier secrets, destinataire privé ni cache d'authentification.

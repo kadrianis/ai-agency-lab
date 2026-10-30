@@ -1,17 +1,20 @@
-# Organisation retenue et analyse des doublons
+# Analyse des doublons — organisation à cinq blocs
+
+Le périmètre actuel est défini dans [Organisation à cinq blocs](ORGANISATION-5-BLOCS.md). Les captures anciennes ne prouvent pas les instructions complètes ni la suspension d'une tâche. Product Lab, Engineering Lab et AI Agency Lab publient du code GitHub; Amazon FBA Lab et Personal Branding & AI Business Lab sont privés par mail.
 
 Cette comparaison repose sur les intitulés et aperçus des captures utilisateur du 30 octobre 2026. Ce n'est pas un audit de l'intégralité des instructions de chaque tâche. Elle ne prouve pas quelle application exécute une tâche. Aucune ancienne tâche T01–T25 n'a été désactivée par ce document ni par la modification de l'usine.
 
-## Une automatisation, quatre blocs
+## Une automatisation, cinq blocs
 
-Automatisation locale active : `usine-portfolio-publication-d-abord`, quotidien à 08:30 Europe/Paris. Sept volets regroupés ainsi :
+Automatisation locale active : `usine-portfolio-publication-d-abord`, quotidien à 08:30 Europe/Paris. Les cinq blocs contiennent des volets complémentaires :
 
 | Bloc | Production | GitHub | Mail / action utilisateur |
 |---|---|---|---|
-| Product Lab | Incrément web et mobile; deux nouveaux MVP distincts par 21 jours | ai-business-platform et mobile-starter-app | Cours détaillé, preuves; déploiement web et distribution mobile guidés |
-| Engineering Lab | Mini-projet architecture/dev + lab cloud/infrastructure/sécurité/IA | cloud-native-labs | Exercice corrigé, choix, tests; déploiement Azure par utilisateur |
-| AI Agency Lab | Agent, automatisation métier et offre de service liée | business-automation/agency, avec orchestrateur existant | Sources et guide HF/Make; déploiement/activation par utilisateur |
-| Article entrepreneuriat IA | Article français final : cas réel sourcé ou business plan fictif | Aucun post GitHub pour l'article | Article complet par mail, publication Medium par utilisateur |
+| Product Lab | Incrément web et mobile; deux nouveaux MVP distincts par 21 jours | product-lab-web et product-lab-mobile | Cours détaillé, preuves; déploiement web et distribution mobile guidés |
+| Engineering Lab | Mini-projet architecture/dev + lab cloud/infrastructure/sécurité/IA | engineering-lab | Exercice corrigé, choix, tests; déploiement Azure par utilisateur |
+| AI Agency Lab | Portfolio technique d'agents et automatisations métier | ai-agency-lab/agency, avec orchestrateur existant | Sources et guide HF/Make; déploiement/activation par utilisateur |
+| Amazon FBA Lab | Formation et études France/USA/Canada | Aucun dépôt | Dossier privé par mail; aucune vente automatique |
+| Personal Branding & AI Business Lab | Article Medium et construction progressive de son agence | Aucun dépôt pour ces dossiers | Cas réel + business plan fictif dans un article complet, et stratégie d'agence privée |
 
 Un seul compte rendu regroupé quotidien; le mot « publié » exige une preuve. Les adresses des dépôts restent inchangées. Aucun dépôt supplémentaire nécessaire. Le changement d'organisation n'a pas pour effet de livrer des SaaS ou agents déjà terminés.
 
@@ -29,19 +32,20 @@ Un seul compte rendu regroupé quotidien; le mot « publié » exige une preuve.
 | T17 | System Design / systèmes distribués | Architecture expliquée et pratiquée dans Engineering/Product Lab |
 | T24 | Fil rouge Web / 3 semaines | SaaS web du cycle de 21 jours |
 | T25 | Fil rouge Mobile / 3 semaines | SaaS mobile du cycle de 21 jours |
+| T05 / T18 | Amazon FBA formation, études et veille | Amazon FBA Lab désormais intégré |
 
 Recommandation : suspendre les équivalents réellement présents plutôt que perdre leurs historiques. Ne pas suspendre une tâche sur le seul mot « IA »; comparer son objectif. Si Claude ne gère pas ces tâches, il doit fournir la liste à traiter dans l'application qui les gère, sans prétendre les avoir arrêtées.
 
 ## Recouvrement partiel à trancher selon l'objectif
 
 - T06 Produit fil rouge mensuel/30 étapes : suspendre s'il constitue un troisième fil rouge logiciel redondant; conserver si projet délibérément différent. Ne pas faire avancer les mêmes SaaS sur deux calendriers concurrents.
-- T13 Business IA, SaaS, agents et rentabilité : garder seulement veille de marché/analyse financière distincte; les offres et business plans des produits sont couverts ici.
-- T14 Freelance IA/Cloud, missions et acquisition B2B : garder prospection, recherche de missions et acquisition; éviter de redemander les mêmes agents/offres déjà produits par AI Agency Lab.
+- T13 Business IA, SaaS, agents et rentabilité : partie stratégie, offres et business plans couverte par le cinquième bloc; comparer avant suspension d'une veille distincte.
+- T14 Freelance IA/Cloud, missions et acquisition B2B : accompagnement à la construction de l'agence couvert dans le cinquième bloc; recherche effective de missions ou prospection exécutée non autorisées par l'usine, donc à distinguer.
 - T16 Cloud & AI Security / SC-500 : conserver préparation à certification ou objectifs d'examen; les labs de sécurité génériques recoupent Engineering Lab.
 
 ## Pas remplacés par cette usine d'après les titres visibles
 
-T05 et T18 Amazon FBA; T07 radar/veille tech; T10 certification AI-200; T11 Canada/immigration; T12 newsletter arabe; T19 revue hebdomadaire; T20 Miracle Morning; T21 culture/histoire/poème; T22 discipline; T23 veille IA du soir. T07/T23 peuvent se recouper entre eux, mais ce n'est pas une raison pour les supprimer dans cette demande sans comparer leur contenu.
+T07 radar/veille tech; T10 certification AI-200; T11 Canada/immigration; T12 newsletter arabe; T19 revue hebdomadaire; T20 Miracle Morning; T21 culture/histoire/poème; T22 discipline; T23 veille IA du soir. T07/T23 peuvent se recouper entre eux, mais ce n'est pas une raison pour les supprimer dans cette demande sans comparer leur contenu. T05/T18 ne figurent plus dans cette liste : Amazon FBA Lab est maintenant pris en charge.
 
 ## Portée du nettoyage
 

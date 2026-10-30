@@ -21,3 +21,10 @@ test('pas de mail de succès sans publication; explicite les livraisons partiell
   report.date = '2026-10-31';
   assert.equal(digest(report), null);
 });
+
+test('les études privées ne sont pas présentées comme des publications GitHub manquantes', () => {
+  const report = {date:receipt.date,cycle:{number:1,day:2},lanes:{web:{publicationMode:'automatic',status:'source-published'},amazon:{publicationMode:'email-only',status:'private-email-not-verified'},agencyStrategy:{publicationMode:'email-only',status:'private-email-not-verified'}},receipts:[{...receipt,verification:'source-published'}]};
+  const message=digest(report);
+  assert.match(message.text,/Dossiers privés par mail : amazon, agencyStrategy/);
+  assert.doesNotMatch(message.text,/Parcours sans livraison vérifiée/);
+});

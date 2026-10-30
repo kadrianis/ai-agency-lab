@@ -1,57 +1,45 @@
-# Portfolio : publier sur GitHub, apprendre après
+# Portfolio — cinq blocs, code publié et dossiers détaillés
 
-## Intitulés de présentation
+Le [programme d'organisation à cinq blocs](ORGANISATION-5-BLOCS.md) validé le 30/10/2026 fait autorité pour le périmètre. Il complète le [programme technique de 21 jours](PROGRAMME-21-JOURS.md). Les présentations précédentes à quatre blocs sont remplacées.
 
-- Product Lab : deux SaaS distincts, web et mobile, renouvelés par cycle de 21 jours.
-- Engineering Lab : concepts d'architecture, cloud, infrastructure, sécurité et IA explorés par des mini-projets démontrables. Le volet Cloud & Production Engineering couvre déploiement et exploitation.
-- AI Agency Lab : agents IA, automatisations et offres de service pouvant être vendues à des clients. Le code de l'orchestrateur reste dans business-automation; cet intitulé ne signifie pas que des agents ou offres y sont déjà livrés.
+## Tâche quotidienne
 
-L'organisation définitive comporte trois labs de code et un article indépendant par mail : Product Lab, Engineering Lab, AI Agency Lab, puis Article entrepreneuriat IA prêt pour Medium. Les trois labs publient leurs sources GitHub. Les déploiements Azure/Hugging Face/Make et l'article Medium sont réalisés manuellement par l'utilisateur. La comparaison des anciennes tâches est dans [Organisation et doublons](ORGANISATION-ET-DOUBLONS.md).
+Une tâche locale active à 08:30 Europe/Paris regroupe : Product Lab, Engineering Lab, AI Agency Lab, Amazon FBA Lab, Personal Branding & AI Business Lab. La tâche Codex crée les réalisations; GitHub Actions exécute les contrôles et l'audit, pas un générateur de produits. L'exécution locale dépend de Codex et de ses connexions; aucune API de génération payante n'est configurée dans Actions.
 
-## Exigence pédagogique et livraison finale
+## Sources GitHub
 
-Le [programme sur 21 jours](PROGRAMME-21-JOURS.md) fait partie des instructions obligatoires. Fournir chaque jour exercice, correction complète, choix/alternatives d'architecture et de base de données, tests unitaires/intégration/bout en bout, schémas, publication, exploitation et vérification des acquis. Le mail doit être détaillé et structuré; joindre les dossiers complets pour les fichiers volumineux. Les volets GitHub sont réalisés et documentés avant annonce de publication.
+- product-lab-web et product-lab-mobile : deux produits distincts par cycle de 21 jours, conservés sous products/cycle-NNN.
+- engineering-lab : mini-projets architecture/dev et labs cloud/infrastructure/sécurité/IA.
+- ai-agency-lab : agents, automatisations et orchestrateur. Le travail commercial et la stratégie de création d'agence sont approfondis dans le cinquième bloc, sans doublonner le portfolio technique.
 
-Azure est ajouté aux publications manuelles : l'usine publie le code du lab cloud sur GitHub et envoie la solution, les commandes, les coûts, les contrôles et le nettoyage; l'utilisateur déploie lui-même sur son abonnement personnel déjà vérifié. Au jour 21, préparer mise en ligne web et distribution mobile App Store/Google Play; anticiper comptes, signature, tests et revue dès J1. Aucune garantie d'approbation store à J21, aucun achat ni déploiement payant par l'usine. Les choix microservices/Kubernetes doivent être pratiqués et expliqués, leur nécessité dans chaque produit justifiée.
+Les noms sont harmonisés avec les labs; l'ancien nom cloud-native-labs n'est plus la cible d'Engineering Lab. Les historiques sont conservés, pas de nouveaux dépôts vides ni de recréation des dépôts supprimés ai-agents/ai-business-articles.
 
-Périmètre corrigé à nouveau le 30/10/2026 à la demande de l'utilisateur : les trois labs publient le code sur GitHub, y compris les sources d'agents et d'automatisations dans business-automation. Les guides et fichiers nécessaires à Azure, Hugging Face et Make sont envoyés par mail pour déploiement utilisateur. L'article Medium est envoyé complet par mail sans publication GitHub ni Medium automatique. Aucun nouveau dépôt n'est nécessaire.
+Pour chaque incrément : lire les instructions et l'existant, préserver modifications utilisateur, construire un résultat utile, tester avant publication, vérifier absence de secrets/données client, publier code/tests/docs/schémas, puis relire commit et CI réussie sur le même SHA. Une PR n'est pas livraison; un commit ne prouve pas hébergement web, déploiement Azure ou mise en ligne d'un Space.
 
-## Fonctionnement
+Chaque produit documente README/lancement, architecture et décisions/alternatives, modèle de données/migrations, API, unités/intégration/bout en bout, configuration sans secrets, CI/conteneurs, sécurité/limites, exploitation et rollback selon son stade réel. Kubernetes et microservices sont des compétences à pratiquer et expliquer; leur emploi dans le MVP doit être justifié.
 
-Une seule tâche Codex active, à 08:30 Europe/Paris, contient sept volets regroupés en trois labs et un article. Pour les sources GitHub : créer, tester, publier, relire commit et CI du même SHA, puis expliquer par mail. Pour les quatre plateformes externes : préparer, tester ce qui est testable, fournir fichiers et procédures, puis l'utilisateur publie. Ne pas confondre code publié avec application mise en ligne. L'envoi des paquets manuels prêts ne dépend pas du succès GitHub. Les schémas d'organisation ne constituent pas une preuve d'exécution quotidienne.
+## Preuves et audit
 
-La création quotidienne est réalisée par la tâche Codex; GitHub Actions exécute les tests et audite les preuves. Actions n'est pas configuré comme générateur de code. La planification locale dépend de Codex et de ses connexions; aucun modèle ni abonnement API payant n'est installé dans Actions.
+receipts/YYYY-MM-DD-LANE.json : lane, date, platform=github, sourceSha, externalId, url du commit, quality {passed:true,url du run}, summary, lesson et risk. Une entrée par date/parcours; un risque hors routine exige approbation explicite liée à la réalisation. Le moteur relit commit et CI du même SHA. repoAliases conserve la vérification des liens historiques après renommage. Ne pas changer un ancien SHA pour faire passer l'audit.
 
-## Cycle et productions
+Les dossiers manuels ont un manifeste privé et des résultats locaux explicités; pas de faux reçu de publication. Un audit vert ne prouve ni toutes les livraisons ni un mail envoyé. reports/DATE.email.json est une préparation sans destinataire public; son not-sent n'écrase pas le journal privé d'envoi.
 
-Cycle démarré le 29/10/2026, J21 le 18/11, cycle 2 le 19/11. Deux nouveaux MVP distincts par cycle : web dans ai-business-platform et mobile dans mobile-starter-app, conservés sous products/cycle-NNN/. Les idées du premier cycle sont modifiables et ne sont pas des produits déjà livrés.
+## Deux blocs privés par mail
 
-J1–3 : problème, parcours et squelette exécutable. J4–7 : fonction métier, API et persistance. J8–12 : authentification, isolation et intégrations. J13–16 : tests, sécurité, Docker et observabilité. J17–20 : démo reproductible et corrections. J21 : release testable, documentation et retour arrière. Aucun déploiement payant ni store sans accord spécifique.
+Amazon FBA Lab : études France/USA/Canada et formation pratique, produits candidats, concurrence, sourcing, coûts complets, marge par scénarios et actualités utiles. Sources et hypothèses séparées, aucun « produit gagnant » garanti, aucune action vendeur ou dépense automatique.
 
-Sources Engineering Lab dans cloud-native-labs. Sources AI Agency Lab dans business-automation/agency/agents et agency/automations, avec offre liée dans agency/offers : cible, problème, valeur démontrée, coût/hypothèses tarifaires et limites. Ne pas présenter une hypothèse commerciale comme un revenu observé. Le même dépôt conserve l'orchestrateur. Les dépôts supprimés ai-agents et ai-business-articles ne doivent pas être recréés. Paquets privés dans .local/manual-deliveries/DATE pour Azure/HF/Make/Medium. L'article reste en français, centré sur les entrepreneurs opérant avec agents IA; faits sourcés et entreprises fictives explicitement distingués.
+Personal Branding & AI Business Lab : chaque jour (1) article Medium complet avec étude de cas réelle puis entreprise imaginée/business plan complet; (2) dossier privé de construction d'agence, offres aux professionnels, produits internes, positionnement, acquisition, tarification, entreprises comparables et accompagnements France/international. L'article est publié manuellement par l'utilisateur. Les opportunités et faits doivent être recherchés dans des sources actuelles, pas inventés.
 
-## Livraison et preuves
+L'article, les études Amazon et le dossier de stratégie ne vont pas sur GitHub. Ils sont conservés dans .local/manual-deliveries/DATE et transmis comme contenu complet ou véritables pièces jointes. Azure/HF/Make restent des déploiements manuels : envoyer sources, exercice, correction, commandes, coûts et nettoyage. L'abonnement Azure personnel a déjà été vérifié, FNC professionnel exclu.
 
-1. Lire les instructions et l'existant de chaque dépôt; conserver les modifications utilisateur.
-2. Produire un incrément utile, sans remplissage pour satisfaire une cadence.
-3. Tester avant publication et contrôler l'absence de secrets/données client. Aucun secret pour du code non fiable.
-4. Publier et relire commit et run CI réussi sur le même SHA. Une PR est une proposition, un commit prouve des sources publiées, pas un SaaS hébergé.
-5. Pour les publications GitHub, enregistrer receipts/YYYY-MM-DD-LANE.json : lane, date, platform=github, sourceSha (40 caractères), externalId, url du commit, quality {passed:true,url du run /actions/runs/ID}, summary, lesson, risk=routine. Leçon : problème, architecture, fonctionnement, tests, lancement et limites. Une entrée par date/parcours. Pour les paquets manuels, conserver un manifeste local avec chemins des fichiers, résultats de tests, sujet et statut ready-for-user-publication, jamais un faux reçu publié. En Make, ne pas présenter comme validé dans Make un blueprint seulement relu localement.
-6. Exécuter l'audit central : relecture des commits et de la CI. Un audit vert ne signifie pas que tout est livré; il nomme les manques.
-7. reports/DATE.email.json prépare un mail sans destinataire public et indique not-sent. Le connecteur Gmail doit réellement envoyer le message; conserver son identifiant dans un journal local privé hors Git. Avant de réessayer, rechercher l'envoi existant pour cette date et ces SHA. Un résultat d'envoi incertain doit être vérifié avant renvoi. L'échec du mail ne doit pas republier le code.
+## Compte rendu et expéditeur
 
-## Compte rendu par mail
+Un mail quotidien regroupé en cinq sections détaillées, avec lien des publications réellement vérifiées, explication pédagogique, paquets à déployer et articles/études complets. S'il n'y a que des dossiers prêts, ne pas annoncer de publication GitHub. Donner limites et manques. Les paquets manuels prêts n'attendent pas une résolution de blocage GitHub.
 
-Un seul mail quotidien regroupé. Objet « Portfolio — date — publications GitHub et contenus à publier » si les deux catégories existent; « Contenus prêts à publier manuellement » si seuls des paquets manuels sont prêts. Deux sections explicites : « Publié sur GitHub » avec commits et CI vérifiés; « À publier toi-même » avec fichiers complets, explications et étapes Make/Hugging Face/Medium. Expliquer architecture, fonctionnement, lancement, compétences et limites; nommer les manques. Si rien n'est prêt, ne pas annoncer de succès; tout mail de blocage doit le dire. Un paquet prêt n'est pas une publication externe et l'envoi d'un mail ne prouve pas que l'utilisateur a publié.
+Le destinataire et le choix d'expéditeur sont dans l'instruction privée, pas dans GitHub. Le compte expéditeur voulu doit être connecté/autorisé; aucun changement du champ From pour simuler une identité. Conserver les messages en attente tant que ce point bloque. Avant envoi, lire .local/mail-ledger et rechercher les messages sent pour éviter doublons. En cas d'incertitude d'envoi, vérifier avant renvoi. Échec du mail n'entraîne pas une nouvelle publication du code. Ne pas envoyer à d'autres destinataires.
 
-Le destinataire est uniquement dans l'instruction privée de l'automatisation. Installer/connecter Gmail avant envoi. Aucun mot de passe ni secret dans Git, le chat ou les pièces jointes. Une notification GitHub ou une tâche active ne prouve pas l'envoi du mail.
+Les anciennes tâches externes montrées en captures restent indépendantes; ce programme n'en supprime aucune. La comparaison des doublons est une recommandation à vérifier dans le système propriétaire, pas une preuve de suspension.
 
-## Connexions au 30/10/2026
+## Vérification et autorisations
 
-Les quatre dépôts conservés sont ai-business-platform, mobile-starter-app, cloud-native-labs et business-automation. Si le plugin GitHub refuse en 403, utiliser la CLI gh autorisée sans afficher les jetons. GITHUB_TOKEN Actions est limité au dépôt courant; les autres dépôts sont publiés via Codex/gh autorisé. Aucun jeton personnel dans Actions.
-
-Gmail : connecté et premier mail envoyé le 30/10/2026 après relecture du commit et de son run CI réussi. Identifiant et destinataire dans .local/mail-ledger, hors Git; consulter avant renvoi. reports/DATE.email.json est la préparation GitHub, à compléter avec les paquets manuels privés avant envoi. Son not-sent n'écrase pas le journal privé. Make/Hugging Face/Medium ne nécessitent plus de connexion automatisée : l'utilisateur publie. Azure personnel connecté séparément, sans déploiement demandé; FNC exclu. « Moi » correspond à l'affichage Gmail d'un mail envoyé depuis et vers le même compte; aucun autre expéditeur n'est autorisé/configuré.
-
-## Validation locale
-
-Node 22+ : npm test puis npm run audit avec accès réseau. Aucun paquet tiers. Secrets et caches exclus de l'archive. Approbation spécifique avant destruction, coûts, données personnelles/client, contenu sensible ou communication à un destinataire autre que celui autorisé.
+Node 22+ : npm test, puis npm run audit avec accès GitHub. Aucun paquet tiers nécessaire. Les secrets, destinataires et caches restent hors Git et hors archive. Aucun coût, contrat, suppression, donnée client, soumission store, publication sensible ni communication externe supplémentaire sans autorisation spécifique. Les renommages explicitement validés par la demande de mise en cohérence sont documentés dans la configuration.

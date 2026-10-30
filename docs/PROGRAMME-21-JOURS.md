@@ -1,5 +1,7 @@
 # Programme de production et de compréhension — cycle de 21 jours
 
+L'[organisation à cinq blocs](ORGANISATION-5-BLOCS.md) définit le périmètre actuel. Ce document détaille surtout les trois labs techniques. Les études Amazon et la construction de l'agence/média suivent leur progression quotidienne privée, sans être forcées dans chaque exercice technique.
+
 ## Répartition des publications
 
 | Cible | Action de l'usine | Action utilisateur |
@@ -22,7 +24,7 @@ Début du cycle existant : 29 octobre 2026; jour 21 : 18 novembre; cycle suivant
 
 ## Programme quotidien
 
-Chaque ligne comprend un incrément web et mobile réellement exécutable, un dossier pédagogique, un mini-lab lié au concept et le paquet de publication pertinent. Les activités sont bornées : ne pas fabriquer sept projets superficiels pour remplir le tableau.
+Chaque ligne prévoit un incrément web et mobile réellement exécutable, un dossier pédagogique, un mini-lab lié au concept et le paquet de publication pertinent. Les activités sont bornées : ne pas fabriquer de projets superficiels pour remplir le tableau ni prétendre qu'une étape prévue a déjà été livrée.
 
 | Jour | Incrément / concept central | Preuve et livrable attendus |
 |---|---|---|

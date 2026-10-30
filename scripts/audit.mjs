@@ -39,7 +39,7 @@ for (const file of (await readdir('receipts')).filter(f => f.endsWith('.json')))
   receipts.push({...r, verification, reason});
 }
 const report = {date, cycle: current, phase: phase(current.day), repositories, receipts,
-  lanes: Object.fromEntries(Object.entries(config.lanes).map(([key, lane]) => [key, {target: lane.manualPlatform ?? lane.target, publicationMode: lane.publicationMode ?? 'automatic', blocker: lane.blocker ?? null, status: lane.publicationMode === 'manual-email' ? 'manual-publication-by-user' : receipts.some(r => r.date === date && r.lane === key && r.verification === 'source-published') ? 'source-published' : 'not-verified'}]))};
+  lanes: Object.fromEntries(Object.entries(config.lanes).map(([key, lane]) => [key, {target: lane.manualPlatform ?? lane.target, publicationMode: lane.publicationMode ?? 'automatic', blocker: lane.blocker ?? null, status: lane.publicationMode === 'manual-email' ? 'manual-publication-by-user' : lane.publicationMode === 'email-only' ? 'private-email-not-verified' : receipts.some(r => r.date === date && r.lane === key && r.verification === 'source-published') ? 'source-published' : 'not-verified'}]))};
 await mkdir('reports', {recursive: true});
 await writeFile(`reports/${date}.json`, JSON.stringify(report, null, 2) + '\n');
 const lines = [`# Production du ${date}`, '', `Cycle ${current.number}, jour ${current.day}/21 : ${report.phase}.`, '', 'Ce rapport contrôle les accès et les preuves. Il ne génère pas les produits.', '', '| Parcours | État | Blocage connu |', '|---|---|---|'];
