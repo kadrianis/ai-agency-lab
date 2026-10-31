@@ -27,7 +27,7 @@ jobs:
           export API_TOKEN="$(openssl rand -hex 32)"
           docker run -d --name support-triage-ci -p 127.0.0.1:7860:7860 -e API_TOKEN support-triage:ci
           trap 'docker rm -f support-triage-ci >/dev/null' EXIT
-          curl --retry 12 --retry-connrefused --retry-delay 1 --fail http://127.0.0.1:7860/health
+          curl --retry 12 --retry-all-errors --retry-connrefused --retry-delay 1 --fail http://127.0.0.1:7860/health
           test "$(curl -s -o /dev/null -w '%{http_code}' -X POST http://127.0.0.1:7860/intake -H 'Content-Type: application/json' --data-binary @agency/automations/intake/sample.json)" = '401'
           for expected in 201 200; do
             code=$(curl -s -o /tmp/triage-result.json -w '%{http_code}' http://127.0.0.1:7860/intake -H "Authorization: Bearer $API_TOKEN" -H 'Content-Type: application/json' --data-binary @agency/automations/intake/sample.json)

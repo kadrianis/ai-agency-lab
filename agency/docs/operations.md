@@ -4,6 +4,8 @@
 
 Node v22.22.2, Windows : `npm test` réussit, 4/4 tests, 0 ignoré. `npm run evaluate` réussit : 8/8 cas synthétiques. Un premier essai HTTP était interdit par le sandbox; la réexécution avec accès loopback a réussi. Les durées de test ne constituent pas un benchmark. La CI exécute les mêmes commandes sous Linux avec la même version de Node; consulter le run du SHA concerné pour son statut réel.
 
+Premier run conteneur : image construite, puis connexion HTTP réinitialisée pendant le démarrage. La sonde ne reprenait que les connexions refusées; la reprise a été élargie aux erreurs transitoires curl, toujours bornée à 12 tentatives supplémentaires. Les assertions suivantes exigent toujours les vrais codes et le contenu attendu; elles ne sont ni ignorées ni remplacées par un succès forcé.
+
 | Niveau | Preuve |
 |---|---|
 | Unité | Citation, abstention, entrée vide/trop longue, secret faible |
